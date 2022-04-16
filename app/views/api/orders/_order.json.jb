@@ -1,0 +1,10 @@
+{
+  id: order.id,
+  user_id: order.user_id,
+  tax_id: order.tax_id,
+  subtotal: order.subtotal,
+  total: order.total,
+  products: order.products,
+  tax: order.tax,
+  shipping: order.user_address
+}

@@ -1,0 +1,9 @@
+{
+    user_id: @user_address.user_id,
+    tax_id: @user_address.tax_id,
+    street_name: @user_address.street_name,
+    city: @user_address.city,
+    region: @user_address.region,
+    country: @user_address.country,
+    postal_code: @user_address.postal_code
+}
