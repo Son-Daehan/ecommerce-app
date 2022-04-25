@@ -6,5 +6,6 @@
     quantity: carted_product.quantity,
     status: carted_product.status,
     order_id: carted_product.order_id,
+    subtotal: @calculated_subtotal
   }
 end

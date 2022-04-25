@@ -1,11 +1,13 @@
 @user_addresses.map do |address|
 {
+    address_id: address.id,
     user_id: address.user_id,
     tax_id: address.tax_id,
     street_name: address.street_name,
     city: address.city,
     region: address.region,
     country: address.country,
-    postal_code: address.postal_code
+    postal_code: address.postal_code,
+    ship_to: address.ship_to
 }
 end

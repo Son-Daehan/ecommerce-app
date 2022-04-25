@@ -5,5 +5,6 @@
     city: @user_address.city,
     region: @user_address.region,
     country: @user_address.country,
-    postal_code: @user_address.postal_code
+    postal_code: @user_address.postal_code,
+    ship_to: @ship_to
 }

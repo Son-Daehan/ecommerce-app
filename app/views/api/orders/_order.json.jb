@@ -5,6 +5,8 @@
   subtotal: order.subtotal,
   total: order.total,
   products: order.products,
-  tax: order.tax,
-  shipping: order.user_address
+  tax: order.total_tax,
+  user_address: order.user_address,
+  date_created: order.created_at
+
 }

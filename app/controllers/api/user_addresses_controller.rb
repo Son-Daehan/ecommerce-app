@@ -1,5 +1,4 @@
 class Api::UserAddressesController < ApplicationController
-    before_action :authenticate_user
 
     def get_tax
       tax = Tax.all
@@ -16,8 +15,9 @@ class Api::UserAddressesController < ApplicationController
     end
   
     def show
-        @user_address = UserAddress.find(params[:id])
-        render 'show.json.jb'
+      
+      @user_address = UserAddress.find(params[:id])
+      render 'show.json.jb'
     end
 
     def create
