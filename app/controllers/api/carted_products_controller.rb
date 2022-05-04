@@ -10,6 +10,19 @@ class Api::CartedProductsController < ApplicationController
         
       end
 
+      taxes = Tax.all
+      addresses = current_user.user_addresses.where(ship_to: true)
+      addresses.each do |address|
+        taxes.each do |tax|
+          if tax.id == address.tax_id
+            @total_tax_rate = tax.total_tax_rate
+          end
+        end
+      end
+
+      @estimated_tax = (@calculated_subtotal.to_f * @total_tax_rate.to_f).to_d.truncate(2)
+      @total_order_price = @estimated_tax + @calculated_subtotal
+
       render 'index.json.jb'
 
     end
@@ -35,7 +48,7 @@ class Api::CartedProductsController < ApplicationController
     def destroy
       @carted_product = CartedProduct.find_by(id: params[:id])
       @carted_product.update(status: "Removed")
-      render json: {message: "You removed #{@carted_product.product.name}"}
+      render json: {message: "You removed #{@carted_product.product.title}"}
     end
       
 end

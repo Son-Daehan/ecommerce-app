@@ -3,6 +3,7 @@
     user_id: user.id,
     name: user.name,
     email: user.email,
-    password: user.password
+    password: user.password,
+    phone_number: user.phone_number
 }
 end

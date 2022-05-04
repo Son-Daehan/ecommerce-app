@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_22_124121) do
+ActiveRecord::Schema.define(version: 2022_04_29_073737) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,21 +58,13 @@ ActiveRecord::Schema.define(version: 2022_04_22_124121) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "name"
+    t.string "title"
+    t.decimal "price"
     t.text "description"
-    t.integer "supplier_id"
+    t.string "category"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.decimal "price", precision: 9, scale: 2
-    t.string "url"
-  end
-
-  create_table "shipping_addresses", force: :cascade do |t|
-    t.integer "user_address_id"
-    t.integer "order_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.boolean "ship_to"
   end
 
   create_table "suppliers", force: :cascade do |t|
@@ -90,7 +82,6 @@ ActiveRecord::Schema.define(version: 2022_04_22_124121) do
     t.decimal "local_tax_rate", precision: 9, scale: 2
     t.decimal "total_tax_rate", precision: 9, scale: 2
     t.string "postal_code"
-    t.integer "user_address_id"
   end
 
   create_table "user_addresses", force: :cascade do |t|
@@ -113,6 +104,7 @@ ActiveRecord::Schema.define(version: 2022_04_22_124121) do
     t.boolean "admin"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "phone_number"
   end
 
 end

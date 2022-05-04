@@ -1,0 +1,7 @@
+{
+    id: @tax.id,
+    state_tax_rate: @tax.state_tax_rate,
+    local_tax_rate: @tax.local_tax_rate,
+    total_tax_rate: @tax.total_tax_rate,
+    postal_code: @tax.postal_code
+}

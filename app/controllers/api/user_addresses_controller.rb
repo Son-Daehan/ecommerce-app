@@ -28,7 +28,8 @@ class Api::UserAddressesController < ApplicationController
           country: params[:country],
           postal_code: params[:postal_code],
           user_id: current_user.id,
-          tax_id: get_tax
+          tax_id: get_tax,
+          ship_to: true
       ) 
 
       if @user_address.save

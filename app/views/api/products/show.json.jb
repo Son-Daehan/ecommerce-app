@@ -1,8 +1,9 @@
 {
-    name: @product.name,
+    id: @product.id,
+    title: @product.title,
     price: @product.price,
     description: @product.description,
-    supplier_id: @product.supplier_id,
-    image_url: @product.images,
-    url: @product.url
+    category: @product.category,
+    image_url: @product.image,
+    category: @product.product_categories
 }

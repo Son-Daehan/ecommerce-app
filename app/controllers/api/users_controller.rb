@@ -16,7 +16,8 @@ class Api::UsersController < ApplicationController
       name: params[:name],
       email: params[:email],
       password: params[:password],
-      password_confirmation: params[:password_confirmation]
+      password_confirmation: params[:password_confirmation],
+      phone_number: params[:phone_number]
     )
     if user.save
       render json: { message: "User created successfully" }, status: :created
@@ -30,6 +31,7 @@ class Api::UsersController < ApplicationController
 
     @user.name = params[:name] || @user.name
     @user.email = params[:email] || @user.email
+    @user.phone_number = params[:phone_number] || @user.phone_number
     @user.password = params[:password] || @user.password
     @user.password_confirmation = params[:password_confirmation] || @user.password_confirmation
     

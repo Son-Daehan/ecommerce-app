@@ -1,5 +1,6 @@
 {
     name: @user.name,
     email: @user.email,
-    address: @address
+    address: @address,
+    phone_number: @user.phone_number
 }

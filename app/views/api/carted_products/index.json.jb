@@ -6,6 +6,9 @@
     quantity: carted_product.quantity,
     status: carted_product.status,
     order_id: carted_product.order_id,
-    subtotal: @calculated_subtotal
+    subtotal: @calculated_subtotal,
+    tax: @total_tax_rate,
+    estimated_tax: @estimated_tax,
+    total_order_price: @total_order_price
   }
 end
