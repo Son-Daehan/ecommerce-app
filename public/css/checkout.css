@@ -1,0 +1,172 @@
+/* CSS Document */
+
+#checkoutWholeWrapper {
+    display: grid;
+    grid-template-rows: auto;
+
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+.wrapper>div {
+    padding: 1em;
+}
+
+#firstNested {
+    display: grid;
+    grid-template-rows: 15% 65% 20%;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+#secondNested {
+    display: grid;
+    text-align: left;
+    grid-template-rows: 15% 65% 20%;
+    margin-right: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+#thirdNested {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 70% 30%;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+
+#checkout-image {
+    height: 90px;
+    aspect-ratio: auto 90 / 90;
+    width: 90px;
+}
+
+.checkout-title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#checkoutWrapper {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#checkoutThirdNestedFurther {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#fourthNested {
+    display: grid;
+    grid-template-rows: 15% 20% 15% 20% 15%;
+    margin-bottom: 15px;
+}
+
+.orderCard {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+#summaryTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: .5px;
+    border-color: black;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+
+}
+
+.summaryDetail {
+    font-size: 14px;
+}
+
+.summaryTotal {
+    font-size: 20px;
+}
+
+.orderCardWrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.orderCardLeft {
+    justify-items: left;
+}
+
+.orderCardRight {
+    justify-items: right;
+}
+
+.productOrderCard {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    height: auto;
+    width: 710px;
+    text-align: center;
+}
+
+.productOrderDescription {
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.productOrderTitle {
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.productQuantityPrice {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.checkoutProductCardNested {
+    display: grid;
+    grid-template-rows: 15% 70% 5%;
+}
+
+.addressCard {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    margin-top: 25px;
+    width: 500px;
+    height: 200px;
+}
+
+.billingCard {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    margin-top: 25px;
+    width: 500px;
+    height: 200px;
+}
+
+.addressChangeButton {
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+}
+
+.firstRowWrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

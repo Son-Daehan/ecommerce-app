@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-Commerce Website Application</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+	<!-- Custom Style Sheet -->
+	<link href="css/custom-style.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">E-Commerce</a>
+		
+		<form class="form-inline my-2 my-lg-0">
+			 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Products
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="product.html">All</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Category 2</a>
+					<a class="dropdown-item" href="#">Category 3</a>
+				</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="account.html">Account</a>
+				</li>
+			</ul>
+			
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+	
+	<div class="jumbotron">
+		<h1 class="display-4" id="jumbo-text">About Me</h1>
+			<p class="lead" id="jumbo-text">Student in web development. Created this e-commerce web application to feature my knowledge in database structure, back-end programming, and creating user-friendly front-end web application.</p>
+				<hr class="my-4">
+			<p id="jumbo-text">For more personal information and projects:</p>
+		<div id="jumbo-text">	
+			<a class="btn btn-primary btn-sm" href="https://www.linkedin.com/in/samuel-son-68078a234/" role="button">LinkedIn</a>
+			<a class="btn btn-primary btn-sm" href="https://github.com/Son-Daehan" role="button">GitHub</a>
+			<a class="btn btn-primary btn-sm" href="http://www.samuelson.dev" role="button">Personal Portfolio</a>
+			
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="row bg-dark text-light">
+		<div class="text-center col-lg-6 offset-lg-3">
+			<h4>Footer </h4>
+			<p>Copyright &copy; 2022 &middot; All Rights Reserved &middot; <a href="#" >Samuel Son</a></p>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

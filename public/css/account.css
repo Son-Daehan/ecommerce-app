@@ -1,0 +1,261 @@
+/* CSS Document */
+
+/* NAVBAR STYLING */
+.navbar-custom {
+	overflow: hidden;
+}
+
+
+.navbar-custom a:hover {
+	color: black;
+}
+
+.navbar-custom a.active {
+	background-color: #000000;
+	color: rgb(0, 0, 0);
+}
+
+#profileNavbar {
+	display: inline-block;
+	float: none;
+	text-align: center;
+	padding: 5px 5px;
+}
+
+.navbar-custom a {
+	color: #4d4646a7;
+}
+
+.navbar-custom a:hover {
+	color: black;
+}
+
+.navbar-custom .nav-item {
+	font-size: 20px;
+	display: inline-block;
+	border-bottom: .5px solid #000;
+}
+
+#login {
+	min-width: 500px;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 174px;
+}
+
+#form-header {
+	text-align: center;
+}
+
+
+/* ADDRESS STYLING */
+.addressViewCard {
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+	font-family: arial;
+	margin-top: 25px;
+	text-align: center;
+}
+
+#addressGrid {
+	display: grid;
+	margin-right: 500px;
+	margin-left: 500px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+}
+
+#addressNestedGrid {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr)
+}
+
+.wrapper>div {
+	padding: 1em;
+}
+
+#addressStyling {}
+
+#addressEditStyling {}
+
+/* ADDRESS DETAIL STYLING */
+#addressDetailGrid {
+	display: grid;
+	margin-right: 250px;
+	margin-left: 250px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+}
+
+#addressDetailNestedGrid {
+	display: grid;
+}
+
+.wrapper>div {
+	padding: 1em;
+}
+
+#addressDetailStyling {
+	margin-right: auto;
+}
+
+.btnAddress {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	margin-left: auto;
+}
+
+.btnAddress:hover {
+	background-color: #ddd;
+}
+
+.btnAddress.active {
+	background-color: #666;
+	color: white;
+}
+
+#createNewAddress {
+	min-width: 500px;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.addressUpdateCard {
+	display: grid;
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+	font-family: arial;
+	margin-top: 25px;
+	justify-content: center;
+}
+
+/* ORDER HISTORY STYLING */
+#orderHistoryGrid {
+	display: grid;
+	margin-right: 150px;
+	margin-left: 150px;
+	margin-top: 25px;
+	margin-bottom: 200px;
+	grid-gap: 1em;
+}
+
+.orderHistoryWrapper {
+	outline-style: ridge;
+	outline-offset: 15px;
+	outline-width: .5px;
+}
+
+#orderNestedGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-size: 13px;
+}
+
+#orderList {
+	margin-bottom: 25px;
+}
+
+.orderHistoryHeader {
+	display: grid;
+	grid-template-columns: 30% 25% 18% 20% 20%;
+	font-size: 15px;
+	margin-bottom: 10px;
+	border-bottom: .5px solid rgb(11, 10, 10);
+}
+
+.orderHistoryHeader div {}
+
+#orderHistoryHeader2 {
+	display: grid;
+	grid-template-columns: 29% 25% 21% 17% 20%;
+	font-size: 15px;
+	margin-bottom: 10px;
+	border-bottom: .5px solid rgb(11, 10, 10);
+}
+
+#orderHistorySupport {
+	text-align: right;
+	font-size: 13px;
+}
+
+/* PROFILE STYLING */
+#profileGrid {
+	display: grid;
+	margin-right: 400px;
+	margin-left: 400px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#profileNestedGrid {
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+#profileNavbar {
+	display: grid;
+	align-self: center;
+}
+
+#profileNested {
+	display: grid;
+	text-align: center;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.profileCard {
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+	font-family: arial;
+	margin-top: 25px;
+	text-align: left;
+}
+
+.btnProfile {
+	border: none;
+	outline: none;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+}
+
+.btnProfile:hover {
+	background-color: #ddd;
+}
+
+#profileEditNestedGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 1em;
+}
+
+#profileEditGrid {
+	display: grid;
+	margin-right: 450px;
+	margin-left: 450px;
+	margin-top: 25px;
+}
+
+input {
+	width: 100%
+}
+
+.btnEditProfile {
+	border: none;
+	outline: none;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+
+}
+
+.btnEditProfile:hover {
+	background-color: #ddd;
+}

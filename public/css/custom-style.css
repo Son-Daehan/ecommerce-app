@@ -1,0 +1,76 @@
+/* CUSTOM STYLE */
+.navbar {
+	height: 80px;
+}
+
+
+/* JUMBOTRON */
+.jumbotron {
+	padding-top: 100px;
+	padding-bottom: 224px;
+}
+
+#jumbo-text {
+	text-align: center;
+}
+
+/* CAROUSEL STYLE */
+.carousel {
+	min-width: 960px;
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-bottom: 87px;
+}
+
+.carouselGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.carouselImage {
+	width: 200px;
+	height: 100%;
+}
+
+/* #navbarHeader {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-column-gap: 10px;
+} */
+
+.footerSocial {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: right;
+}
+
+
+footer {
+	position: absolute;
+	background-color: green;
+	width: 100%;
+	bottom: 0;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.button {
+	border-style: solid;
+	border-width: .5px;
+	border-color: rgba(82, 80, 80, 0.924);
+	background-color: white;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+
+}
+
+.imageHome {
+	height: 600px;
+	width: 100%;
+}

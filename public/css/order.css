@@ -1,0 +1,36 @@
+/* CSS Document */
+
+.wrapper>div {
+    padding: 1em;
+}
+
+.orderNested {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 1em;
+}
+
+.order-title {
+    margin-top: 50px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: .5px;
+}
+
+#orderWrapper {
+    display: grid;
+
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+}
+
+.orderNestedLeft {
+    text-align: left;
+}
+
+.orderNestedRight {
+    text-align: right;
+}

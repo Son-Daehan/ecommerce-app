@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  # EXAMPLE HTML ROUTE
-  get "/products" => "products#index"
-  resources :products
 
-  # EXAMPLE JSON ROUTE WITH API NAMESPACE
   namespace :api do
     get "/products" => "products#index"
     get "/products/:id" => "products#show"
@@ -57,4 +53,5 @@ Rails.application.routes.draw do
 
   end
 
+  get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: 'public/index.html')]] } 
 end

@@ -1,0 +1,74 @@
+/* CSS Document */
+
+.wrapper>div {
+    padding: 1em;
+}
+
+#cartNested {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    text-align: left;
+}
+
+#product-image {
+    width: 200px;
+    height: 170px;
+}
+
+.cart-title {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    text-align: left;
+}
+
+#cartNestedFurther {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    margin-left: 100px;
+}
+
+#wholeWrapper {
+    display: grid;
+    grid-gap: 2em;
+    margin-right: 80px;
+    margin-top: 25px;
+    margin-bottom: 150px;
+    grid-gap: 2em;
+    grid-template-columns: 70% 30%;
+    margin-left: 120px;
+    margin-right: 120px;
+
+}
+
+#emptyCartGrid {
+    display: grid;
+    margin-top: 70px;
+}
+
+
+.emptyCart {
+    display: grid;
+    justify-content: center;
+}
+
+.cardCarted {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+
+    font-family: arial;
+    height: auto;
+    width: 100%;
+}
+
+.computedDetail {
+    text-align: right;
+}
+
+.cardCartedTwo {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}

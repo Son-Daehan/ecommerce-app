@@ -1,0 +1,17 @@
+#profileNavbar {
+    display: grid;
+    align-self: center;
+}
+
+#profileNested {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.profileCard {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    margin-top: 25px;
+    text-align: left;
+}
