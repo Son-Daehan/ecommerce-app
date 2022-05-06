@@ -20,6 +20,9 @@ Product.create!([
   {title: "Opna Women's Short Sleeve Moisture", price: "7.95", description: "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort", category: "women's clothing", image: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"},
   {title: "DANVOUY Womens T Shirt Casual Cotton Short", price: "12.99", description: "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.", category: "women's clothing", image: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"}
 ])
+UserAddress.create!([
+  {street_name: "192 Holland St", city: "Northfield", region: "Illinois", country: "USA", postal_code: "60062", user_id: 1, tax_id: 1, ship_to: true}
+])
 Tax.create!([
   {state_tax_rate: "0.02", local_tax_rate: "0.01", total_tax_rate: "0.03", postal_code: "60062"}
 ])
@@ -27,9 +30,7 @@ Tax.create!([
 Order.create!([
   {user_id: 1, subtotal: "279.95", total_tax: "8.4", total: "288.35", tax_id: 1, user_address_id: 1}
 ])
-UserAddress.create!([
-  {street_name: "192 Holland St", city: "Northfield", region: "Illinois", country: "USA", postal_code: "60062", user_id: 1, tax_id: 1, ship_to: true}
-])
+
 Category.create!([
   {name: "men's clothing"},
   {name: "jewelery"},
