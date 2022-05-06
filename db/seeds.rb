@@ -1,25 +1,4 @@
-ProductCategory.create!([
-  {product_id: 1, category_id: 1},
-  {product_id: 2, category_id: 1},
-  {product_id: 3, category_id: 1},
-  {product_id: 4, category_id: 1},
-  {product_id: 5, category_id: 2},
-  {product_id: 6, category_id: 2},
-  {product_id: 7, category_id: 2},
-  {product_id: 8, category_id: 2},
-  {product_id: 9, category_id: 3},
-  {product_id: 10, category_id: 3},
-  {product_id: 11, category_id: 3},
-  {product_id: 12, category_id: 3},
-  {product_id: 13, category_id: 3},
-  {product_id: 14, category_id: 3},
-  {product_id: 15, category_id: 4},
-  {product_id: 16, category_id: 4},
-  {product_id: 17, category_id: 4},
-  {product_id: 18, category_id: 4},
-  {product_id: 19, category_id: 4},
-  {product_id: 20, category_id: 4}
-])
+
 Product.create!([
   {title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops", price: "109.95", description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday", category: "men's clothing", image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"},
   {title: "Mens Casual Premium Slim Fit T-Shirts ", price: "22.3", description: "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.", category: "men's clothing", image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"},
@@ -47,6 +26,28 @@ Category.create!([
   {name: "jewelery"},
   {name: "electronics"},
   {name: "women's clothing"}
+])
+ProductCategory.create!([
+  {product_id: 1, category_id: 1},
+  {product_id: 2, category_id: 1},
+  {product_id: 3, category_id: 1},
+  {product_id: 4, category_id: 1},
+  {product_id: 5, category_id: 2},
+  {product_id: 6, category_id: 2},
+  {product_id: 7, category_id: 2},
+  {product_id: 8, category_id: 2},
+  {product_id: 9, category_id: 3},
+  {product_id: 10, category_id: 3},
+  {product_id: 11, category_id: 3},
+  {product_id: 12, category_id: 3},
+  {product_id: 13, category_id: 3},
+  {product_id: 14, category_id: 3},
+  {product_id: 15, category_id: 4},
+  {product_id: 16, category_id: 4},
+  {product_id: 17, category_id: 4},
+  {product_id: 18, category_id: 4},
+  {product_id: 19, category_id: 4},
+  {product_id: 20, category_id: 4}
 ])
 Tax.create!([
   {state_tax_rate: "0.02", local_tax_rate: "0.01", total_tax_rate: "0.03", postal_code: "60062"}
