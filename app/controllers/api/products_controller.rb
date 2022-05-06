@@ -7,7 +7,6 @@ class Api::ProductsController < ApplicationController
   end
 
   def create
-    only_one_address
     products_hashes = Product.get_products
     products_attributes = products_hashes.map { |hash| hash.slice( 'title', 'price', 'description', 'category', 'image')}
     @products = products_attributes.each { |attributes| Product.create(attributes) }
